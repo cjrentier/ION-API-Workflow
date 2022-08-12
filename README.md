@@ -57,15 +57,24 @@ In this example we only review the starting of a Workflow.
 
 ### Definition of /v1/workflow/start
 Parameters for calling the API:
-* logicalId - String - (query) -
-
-```
-Name                  Type              Description
-logicalId             string (query)    The application logicalId
-StartWorkflowJSONBody object (body)     The Workflow start request as JSON
+* logicalId             string (query)    The application logicalId
+* StartWorkflowJSONBody object (body)     The Workflow start request as JSON
 
 Example Model: StartWorkflowRequest{...}
+```
+StartWorkflowRequest{
+workflowName*	string
+The name of the Workflow to start
+
+instanceName*	string
+The name/description for this specific Workflow instance
+
+inputVariables	[...]
+inputStructures	[...]
+}
+```
 Example Value: 
+```
 {
   "workflowName": "string",
   "instanceName": "string",
