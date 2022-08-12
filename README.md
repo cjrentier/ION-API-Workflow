@@ -20,7 +20,7 @@ Parameters filled by the Workflow:
 
 Parameters filled by the client application calling the Workflow:
 
-![image](https://user-images.githubusercontent.com/82956918/184355755-6e66dfcc-328b-4950-8eb6-6f8e3c603e1b.png)
+![image](https://user-images.githubusercontent.com/82956918/184356441-b7eac961-5df7-48e8-b74d-d4f7fa97ea48.png)
 
 FYI: Drill Backs, Structures and Authorizations are not filled and used in this example.
 FYI: The calling application has first used another API (/Mingle/SocialService.Svc/User/Detail) to get its own PersonID, this will be used for the Notification distribution.
