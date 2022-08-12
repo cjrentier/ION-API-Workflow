@@ -37,6 +37,13 @@ The following parameters are set:
 
 ![image](https://user-images.githubusercontent.com/82956918/184339576-81c386a7-dca5-4413-b91a-c502a5abd7e4.png)
 
+### Notification activity
+The notification activity sends a message to the Requestor. 
+* Notification: Please see information about WorkflowId [ID], started at [StartTime].
+* Content: All parameters are selected to demo how they are filled.
+* Distribution: The Requestor parameter is used, this is filled by the calling application with the IFS Person ID.
+
+Activate the Workflow, no Authorization are added as not needed for calling via ION API
 
 ## Available APIs for Workflows
 The Infor ION / ION Process Application Rest API has multiple API calls for Workflows:
