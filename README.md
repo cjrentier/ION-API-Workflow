@@ -6,7 +6,7 @@ Documentation:
 * ION API: https://docs.infor.com/ionapi/latest/en-us/ionapiag_cloud/default.html go to Available APIs > Infor ION > IONProcessApplicationService
 
 ## Workflow Definition in ION Desk
-Modelling the Workflow and activating it in the ION Desk. The Workflow Definition has been attached ![file](https://github.com/cjrentier/ION-API-Workflow/blob/main/WF_DisplayReceivedArguments.xml)
+Modelling the Workflow and activating it in the ION Desk. The Workflow Definition has been attached [file](https://github.com/cjrentier/ION-API-Workflow/blob/main/WF_DisplayReceivedArguments.xml)
 ### Flow definition
 A simple Workflow is created to notify the requesting user that the Workflow was called and showing all the relevant parameters. The Workflow has only a system activity *Set Parameter* and a user activity *Notification*.
 
