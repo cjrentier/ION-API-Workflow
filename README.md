@@ -23,6 +23,7 @@ Parameters filled by the client application calling the Workflow:
 ![image](https://user-images.githubusercontent.com/82956918/184338626-3bbfcf93-9c91-4f38-a474-aa521ed89a48.png)
 
 FYI: Drill Backs, Structures and Authorizations are not filled and used in this example.
+FYI: The calling application has first used another API (/Mingle/SocialService.Svc/User/Detail) to get its own PersonID, this will be used for the Notification distribution.
 
 ### Set Parameters activity
 The following parameters are set:
@@ -93,3 +94,71 @@ Example Value:
 }
 
 ```
+
+Testing the Workflow API via ION API is possible too. Fill the paramters correctly
+
+Fill logicalId with the relevant value e.g. lid://infor.test.myapp
+
+Fill StartWorkflowJSONBody with below JSON object:
+```
+{
+	"instanceName": "Test starting Workflow from API",
+	"workflowName": "WF_DisplayReceivedArguments",
+	"inputVariables": [
+		{
+			"name": "Requestor",
+			"dataType": "STRING",
+			"value": "c63d2ae6-edd1-4a74-9a82-d01727668827"
+		},
+		{
+			"name": "InputString",
+			"dataType": "STRING",
+			"value": "PWinput"
+		},
+		{
+			"name": "InputBoolean",
+			"dataType": "BOOLEAN",
+			"value": "True"
+		},
+		{
+			"name": "InputInteger",
+			"dataType": "INTEGER",
+			"value": 123456789
+		},
+		{
+			"name": "InputDecimal",
+			"dataType": "DECIMAL",
+			"value": 1234.6789
+		},
+		{
+			"name": "InputHyperlink",
+			"dataType": "STRING",
+			"value": "https://microsoft.com"
+		},
+		{
+			"name": "InputDate",
+			"dataType": "DATE",
+			"value": "2021-12-31"
+		},
+		{
+			"name": "InputDateTime",
+			"dataType": "DATETIME",
+			"value": "2021-12-31T13:45:50Z"
+		}
+	]
+}
+```
+
+![image](https://user-images.githubusercontent.com/82956918/184353423-6f523adf-91e2-4257-aa4f-7db3633cdb3c.png)
+
+Response Code = 200 and Response body will contain the Workflow ID:
+```
+{
+  "id": 203
+}
+```
+![image](https://user-images.githubusercontent.com/82956918/184353597-eef84c89-30d7-4226-b779-ac61f5909720.png)
+
+
+
+
