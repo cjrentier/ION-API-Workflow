@@ -41,11 +41,11 @@ The following parameters are set:
 
 ### Notification activity
 The notification activity sends a message to the Requestor. 
-* Notification: Please see information about WorkflowId [ID], started at [StartTime].
+* Notification: Example: "Please see information about WorkflowId [ID], started at [StartTime]".
 * Content: All parameters are selected to demo how they are filled.
 * Distribution: The Requestor parameter is used, this is filled by the calling application with the IFS Person ID.
 
-Activate the Workflow, no Authorization are added as not needed for calling via ION API
+Activate the Workflow, no Authorization is added as not needed for calling via ION API
 
 ## Available APIs for Workflows
 The Infor ION / ION Process Application Rest API has multiple API calls for Workflows:
@@ -92,11 +92,11 @@ Example Value:
 
 ```
 
-Testing the Workflow API via ION API is possible too. Fill the parameters correctly
+Testing the Workflow API via ION API is possible too.
 
-Fill logicalId with the relevant value e.g. lid://infor.test.myapp
+Fill **logicalId** with the relevant value e.g. lid://infor.test.myapp
 
-Fill StartWorkflowJSONBody with below JSON object:
+Fill **StartWorkflowJSONBody** with below JSON object:
 ```
 {
 	"instanceName": "Test starting Workflow from API",
@@ -145,6 +145,7 @@ Fill StartWorkflowJSONBody with below JSON object:
 	]
 }
 ```
+Example:
 
 ![image](https://user-images.githubusercontent.com/82956918/184353423-6f523adf-91e2-4257-aa4f-7db3633cdb3c.png)
 
@@ -163,12 +164,16 @@ The Notification in the Inbox will look like:
 ![image](https://user-images.githubusercontent.com/82956918/184356311-1a906620-6537-4edc-99da-382b8328ec7c.png)
 
 ## Building Client Application
-The Client application (.NET, Java, Powershell or any other platform) can be used to call the ION API and trigger a Workflow.
+A Client application (.NET, Java, Postman, Powershell or any other platform) can be used to call the ION API and trigger a Workflow.
 
 The **/IONSERVICES/process/application/v1/workflow/interface** can be used to list all Workflows which are active and can be started.
 For example call **/IONSERVICES/process/application/v1/workflow/interface?name=<WorkflowName\>** to check if the Workflow is active before starting it. Check if it responds, the .name property is present and filled with the <WorkflowName\>.
 
-For example when called from Postman:
+For example calling the ION API from Postman to test if Workflow is present and is Active:
+
+![image](https://user-images.githubusercontent.com/82956918/184371788-657f697c-8347-4aec-b519-e871bcb5a585.png)
+
+For example calling the ION API from Postman to start the Workflow with parameters filled:
 
 ![image](https://user-images.githubusercontent.com/82956918/184360346-fc944232-2a7c-4733-8292-c9d40856f6ed.png)
 
@@ -178,7 +183,7 @@ Response:
 
 In ION Desk it will show like:
 
-![image](https://user-images.githubusercontent.com/82956918/184360871-754b3f1b-fd38-471d-835b-223d58004388.png)
+![image](https://user-images.githubusercontent.com/82956918/184360871-754b3f1b-fd3![Uploading image.png…]()8-471d-835b-223d58004388.png)
 
 
 
