@@ -159,4 +159,9 @@ The Notification in the Inbox will look like:
 
 ![image](https://user-images.githubusercontent.com/82956918/184356311-1a906620-6537-4edc-99da-382b8328ec7c.png)
 
+## Building Client Application
+The Client application (.NET, Java, Powershell or any other platform) can be used to call the ION API and trigger a Workflow.
+
+The /IONSERVICES/process/application/v1/workflow/interface can be used to list all Workflows which are active and can be started.
+For example call /IONSERVICES/process/application/v1/workflow/interface?name=<WorkflowName\> to check if the Workflow is active before starting it.
 
