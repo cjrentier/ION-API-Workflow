@@ -2,10 +2,10 @@
 A small demo on starting a new Workflow instance using ION API. The definition of the Workflow in ION Desk is explained and how to call the Workflow using ION API.
 
 Documentation:
-* Workflows https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html, in the menu go to Workflow.
-* ION API https://docs.infor.com/ionapi/latest/en-us/ionapiag_cloud/default.html go to Available APIs > Infor ION > IONProcessApplicationService
+* Workflows: https://docs.infor.com/ion/latest/en-us/iondeskceug_cloud_osm/default.html, in the menu go to Workflow.
+* ION API: https://docs.infor.com/ionapi/latest/en-us/ionapiag_cloud/default.html go to Available APIs > Infor ION > IONProcessApplicationService
 
-## Managing Workflow in ION Desk
+## Workflow Definition in ION Desk
 Modelling the Workflow and activating it in the ION Desk. 
 ### Flow definition
 A simple Workflow is created to notify the requesting user that the Workflow was called and showing all the relevant parameters. The Workflow has only a system activity *Set Parameter* and a user activity *Notification*.
@@ -23,11 +23,11 @@ Parameters filled by the client application calling the Workflow:
 
 ![image](https://user-images.githubusercontent.com/82956918/184356441-b7eac961-5df7-48e8-b74d-d4f7fa97ea48.png)
 
-FYI: Drill Backs, Structures and Authorizations are not filled and used in this example. The calling application has used another API (/Mingle/SocialService.Svc/User/Detail) to get its own PersonID, this will be used for the Notification distribution.
+FYI: Drill Backs, Structures and Authorizations are not filled and used in this example. The calling application called another API (/Mingle/SocialService.Svc/User/Detail) to get its own PersonID, this will be used for the Notification distribution.
 
 ### Set Parameters activity
 The following parameters are set:
-* **Name - Date Type - Assignment Type**
+**Name - Date Type - Assignment Type**
 * ID - INTEGER - Expression : ID()
 * Name - STRING - Expression : NAME()
 * Now - DATE AND TIME - Expression : NOW()
