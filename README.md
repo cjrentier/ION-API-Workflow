@@ -153,7 +153,6 @@ Response Code = 200 and Response body will contain the Workflow ID:
   "id": 207
 }
 ```
-![image](https://user-images.githubusercontent.com/82956918/184356181-000e42d5-5183-4b66-8f84-a25c541cb504.png)
 
 The Notification in the Inbox will look like:
 
