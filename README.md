@@ -186,4 +186,5 @@ In ION Desk it will show like:
 ![image](https://user-images.githubusercontent.com/82956918/184360871-754b3f1b-fd38-471d-835b-223d58004388.png)
 
 
+For any questions or details please mail to [Christiaan Rentier](mailto:Christiaan.Rentier@infor.com?subject=Using%20ION-API%20for%20Workflows)
 
