@@ -20,7 +20,7 @@ Parameters filled by the Workflow:
 
 Parameters filled by the client application calling the Workflow:
 
-![image](https://user-images.githubusercontent.com/82956918/184338626-3bbfcf93-9c91-4f38-a474-aa521ed89a48.png)
+![image](https://user-images.githubusercontent.com/82956918/184355755-6e66dfcc-328b-4950-8eb6-6f8e3c603e1b.png)
 
 FYI: Drill Backs, Structures and Authorizations are not filled and used in this example.
 FYI: The calling application has first used another API (/Mingle/SocialService.Svc/User/Detail) to get its own PersonID, this will be used for the Notification distribution.
@@ -150,13 +150,13 @@ Fill StartWorkflowJSONBody with below JSON object:
 Response Code = 200 and Response body will contain the Workflow ID:
 ```
 {
-  "id": 203
+  "id": 207
 }
 ```
-![image](https://user-images.githubusercontent.com/82956918/184353597-eef84c89-30d7-4226-b779-ac61f5909720.png)
+![image](https://user-images.githubusercontent.com/82956918/184356181-000e42d5-5183-4b66-8f84-a25c541cb504.png)
 
 The Notification in the Inbox will look like:
 
-![image](https://user-images.githubusercontent.com/82956918/184354910-44cda93b-7663-47a8-9d5a-b57e5fa0d302.png)
+![image](https://user-images.githubusercontent.com/82956918/184356311-1a906620-6537-4edc-99da-382b8328ec7c.png)
 
 
