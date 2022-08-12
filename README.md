@@ -53,3 +53,23 @@ The Infor ION / ION Process Application Rest API has multiple API calls for Work
 * Endpoint: https://mingle-ionapi.inforcloudsuite.com/<Tenant\>/IONSERVICES/process/application
 
 In this example we only review the starting of a Workflow.
+
+### Definition of /v1/workflow/start
+Parameters for calling the API:
+* logicalId - String - (query) -
+
+```
+Name	Description
+logicalId *
+string
+(query)	
+The application logicalId
+
+logicalId - The application logicalId
+StartWorkflowJSONBody *
+object
+(body)	
+The Workflow start request as JSON
+
+StartWorkflowRequest{...}
+```
