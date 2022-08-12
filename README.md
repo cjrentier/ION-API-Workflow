@@ -50,6 +50,6 @@ The Infor ION / ION Process Application Rest API has multiple API calls for Work
 * /v1/workflow/interface (GET) Returns a list of active workflows and their interface information.
 * /v1/workflow/start (POST) Start a new Workflow instance
 * /v1/workflow/cancel (POST) Cancel a running Workflow instance
-* Endpoint: "https://mingle-ionapi.inforcloudsuite.com/<Tenant\>/IONSERVICES/process/application"
+* Endpoint: https://mingle-ionapi.inforcloudsuite.com/<Tenant\>/IONSERVICES/process/application
 
 In this example we only review the starting of a Workflow.
