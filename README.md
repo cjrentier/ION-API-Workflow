@@ -57,22 +57,9 @@ In this example we only review the starting of a Workflow.
 
 ### Definition of /v1/workflow/start
 Parameters for calling the API:
-* logicalId             string (query)    The application logicalId
-* StartWorkflowJSONBody object (body)     The Workflow start request as JSON
+* **logicalId** - string (query) - The application logicalId
+* **StartWorkflowJSONBody** - object (body) - The Workflow start request as JSON
 
-Example Model: StartWorkflowRequest{...}
-```
-StartWorkflowRequest{
-workflowName*	string
-The name of the Workflow to start
-
-instanceName*	string
-The name/description for this specific Workflow instance
-
-inputVariables	[...]
-inputStructures	[...]
-}
-```
 Example Value: 
 ```
 {
@@ -168,6 +155,8 @@ Response Code = 200 and Response body will contain the Workflow ID:
 ```
 ![image](https://user-images.githubusercontent.com/82956918/184353597-eef84c89-30d7-4226-b779-ac61f5909720.png)
 
+The Notification in the Inbox will look like:
 
+![image](https://user-images.githubusercontent.com/82956918/184354910-44cda93b-7663-47a8-9d5a-b57e5fa0d302.png)
 
 
