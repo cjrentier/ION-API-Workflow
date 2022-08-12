@@ -27,7 +27,7 @@ FYI: Drill Backs, Structures and Authorizations are not filled and used in this 
 
 ### Set Parameters activity
 The following parameters are set:
-* Name - Date Type - Assignment Type
+* **Name - Date Type - Assignment Type**
 * ID - INTEGER - Expression : ID()
 * Name - STRING - Expression : NAME()
 * Now - DATE AND TIME - Expression : NOW()
