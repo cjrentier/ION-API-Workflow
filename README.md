@@ -153,6 +153,9 @@ Response Code = 200 and Response body will contain the Workflow ID:
   "id": 207
 }
 ```
+In ION Desk > Monitors & Workflows > Active Workflows the Instance can be checked, there it will show the Instance Name as filled by the caller.
+
+![image](https://user-images.githubusercontent.com/82956918/184360208-5301a52f-c34b-4835-8283-9a5602b46309.png)
 
 The Notification in the Inbox will look like:
 
@@ -161,6 +164,16 @@ The Notification in the Inbox will look like:
 ## Building Client Application
 The Client application (.NET, Java, Powershell or any other platform) can be used to call the ION API and trigger a Workflow.
 
-The /IONSERVICES/process/application/v1/workflow/interface can be used to list all Workflows which are active and can be started.
-For example call /IONSERVICES/process/application/v1/workflow/interface?name=<WorkflowName\> to check if the Workflow is active before starting it.
+The **/IONSERVICES/process/application/v1/workflow/interface** can be used to list all Workflows which are active and can be started.
+For example call **/IONSERVICES/process/application/v1/workflow/interface?name=<WorkflowName\>** to check if the Workflow is active before starting it. Check if it responds, the .name property is present and filled with the <WorkflowName\>.
+
+For example when called from Postman:
+
+![image](https://user-images.githubusercontent.com/82956918/184360346-fc944232-2a7c-4733-8292-c9d40856f6ed.png)
+
+Response: 
+
+![image](https://user-images.githubusercontent.com/82956918/184360415-c71f991e-aa0c-43a2-bca8-daf5093fcee8.png)
+
+
 
