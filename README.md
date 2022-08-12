@@ -102,7 +102,7 @@ Fill StartWorkflowJSONBody with below JSON object:
 	"workflowName": "WF_DisplayReceivedArguments",
 	"inputVariables": [
 		{
-			"name": "Requestor",
+			"name": "InputRequestor",
 			"dataType": "STRING",
 			"value": "c63d2ae6-edd1-4a74-9a82-d01727668827"
 		},
