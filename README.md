@@ -59,9 +59,9 @@ Parameters for calling the API:
 * logicalId - String - (query) -
 
 ```
-Name	                  Type                Description
-logicalId             - string (query)	  - The application logicalId
-StartWorkflowJSONBody - object (body)     - The Workflow start request as JSON
+Name                  Type              Description
+logicalId             string (query)    The application logicalId
+StartWorkflowJSONBody object (body)     The Workflow start request as JSON
 
 Example Model: StartWorkflowRequest{...}
 Example Value: 
