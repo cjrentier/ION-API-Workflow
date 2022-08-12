@@ -5,7 +5,7 @@ A demo on starting a new Workflow instance using ION API.
 * Documentation on ION API can be found on https://docs.infor.com/ionapi/latest/en-us/ionapiag_cloud/default.html.
 
 ## Managing Workflow in ION Desk
-Before we can call the Workflow it must be created and activated in ION Desk. 
+First create the Workflow and activate it in the ION Desk. 
 ### Flow definition
 A simple Workflow is created to notify the requesting user that the Workflow was called and showing all the relevant paramters. The Workflow has only a system activity *Set Parameter* and a user activity *Notification*.
 
