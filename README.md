@@ -7,7 +7,7 @@ A demo on starting a new Workflow instance using ION API.
 ## Managing Workflow in ION Desk
 First create the Workflow and activate it in the ION Desk. 
 ### Flow definition
-A simple Workflow is created to notify the requesting user that the Workflow was called and showing all the relevant paramters. The Workflow has only a system activity *Set Parameter* and a user activity *Notification*.
+A simple Workflow is created to notify the requesting user that the Workflow was called and showing all the relevant parameters. The Workflow has only a system activity *Set Parameter* and a user activity *Notification*.
 
 ![image](https://user-images.githubusercontent.com/82956918/184337329-36729545-ffa0-43b1-9890-4fa3669bd85c.png)
 
@@ -91,7 +91,7 @@ Example Value:
 
 ```
 
-Testing the Workflow API via ION API is possible too. Fill the paramters correctly
+Testing the Workflow API via ION API is possible too. Fill the parameters correctly
 
 Fill logicalId with the relevant value e.g. lid://infor.test.myapp
 
